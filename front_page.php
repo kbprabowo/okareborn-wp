@@ -15,9 +15,9 @@ Template Name: Front page
             <div class="carousel-item <?php if ($key == 0 ):?> active <?php endif ?>">
                 <div class="container mt-5">
                     <h1 class="banner_taital"><?php echo $slide['hero_title']; ?></h1>
-                    <p class="banner_text">
+                    <div class="banner_text">
                         <?php echo $slide['hero_description']; ?>
-                    </p>
+                    </div>
                 </div>
             </div>
             <?php endforeach ?>
@@ -33,9 +33,9 @@ Template Name: Front page
     ?>
     <div class="container">
         <h1 class="services_taital"><?php echo $services['services_title']; ?><br></h1>
-        <p class="services_text">
+        <div class="services_text">
             <?php echo $services['services_description']; ?><br>
-        </p>
+        </div>
         <div class="services_section_2">
             <div class="row">
                 <?php $slides = $services['services_slides'];
@@ -147,9 +147,9 @@ Template Name: Front page
     <?php $contact = get_field('contact_us'); ?>
     <div class="container">
         <h1 class="choose_taital"><?php echo $contact['contact_us_title']; ?></h1>
-        <p class="choose_text">
+        <div class="choose_text">
             <?php echo $contact['contact_us_description']; ?>
-        </p>
+        </div>
         <div class="read_bt_1"><a href="#"><?php echo $contact['contact_us_button']; ?></a></div>
         <div class="newsletter_box">
             <h1 class="let_text"><?php echo $contact['contact_us_tagline']; ?></h1>
