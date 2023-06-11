@@ -153,7 +153,7 @@ Template Name: Front page
         <div class="read_bt_1"><a href="#"><?php echo $contact['contact_us_button']; ?></a></div>
         <div class="newsletter_box">
             <h1 class="let_text"><?php echo $contact['contact_us_tagline']; ?></h1>
-            <div class="getquote_bt"><a href="#"><?php echo $contact['contact_us_tagline_button']; ?></a></div>
+            <div class="getquote_bt"><a href="#ctc_chat"><?php echo $contact['contact_us_tagline_button']; ?></a></div>
         </div>
     </div>
 </div>
