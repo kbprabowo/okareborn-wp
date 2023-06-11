@@ -13,7 +13,7 @@ Template Name: Front page
     $slides = get_field('hero_slides');
     foreach ($slides as $key => $slide): ?>
             <div class="carousel-item <?php if ($key == 0 ):?> active <?php endif ?>">
-                <div class="container">
+                <div class="container mt-5">
                     <h1 class="banner_taital"><?php echo $slide['hero_title']; ?></h1>
                     <p class="banner_text">
                         <?php echo $slide['hero_description']; ?>
@@ -40,7 +40,7 @@ Template Name: Front page
             <div class="row">
                 <?php $slides = $services['services_slides'];
                 foreach ($slides as $slide): ?>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-5">
                     <div><img src="<?php echo $slide['services_img']['url']; ?>" class="services_img" /></div>
                     <div class="btn_main"><a href="#"><?php echo $slide['services_button_label']; ?></a></div>
                 </div>
@@ -60,9 +60,9 @@ Template Name: Front page
                 ?>
                 <div class="about_taital_main">
                     <h1 class="about_taital"><?php echo $about['about_us_title']; ?></h1>
-                    <p class="about_text">
+                    <div class="about_text">
                         <?php echo $about['about_us_description']; ?>
-                    </p>
+                    </div>
                     <div class="readmore_bt"><a href="#"><?php echo $about['about_us_button']; ?></a></div>
                 </div>
             </div>
