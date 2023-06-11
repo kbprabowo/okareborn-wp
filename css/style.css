@@ -214,7 +214,7 @@ button {
 }
 
 .layout_padding {
-  padding-top: 90px;
+  padding-top: 10px;
   padding-bottom: 0px;
 }
 
@@ -345,7 +345,7 @@ button {
 .banner_section {
   width: 100%;
   float: left;
-  padding-bottom: 368px;
+  padding-bottom: 440px;
 }
 
 .banner_taital {
@@ -536,7 +536,7 @@ button {
   height: auto;
   background-repeat: no-repeat;
   background-size: 100%;
-  padding-bottom: 345px;
+  padding-bottom: 325px;
   padding-top: 200px;
 }
 

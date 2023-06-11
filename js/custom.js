@@ -2,7 +2,7 @@
     File Name: custom.js
 ---------------------------------------------------------------------*/
 
-$(function () {
+jQuery(function ($) {
 	
 	"use strict";
 	
