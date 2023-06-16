@@ -141,21 +141,78 @@ Template Name: Front page
         </div>
     </div>
 </div>
-<!-- client section start -->
-<!-- choose section start -->
-<div class="choose_section layout_padding">
-    <?php $contact = get_field('contact_us'); ?>
+<!-- client section end -->
+
+<!-- faq section start -->
+<div class="faq_section layout_padding" id="faq">
     <div class="container">
-        <h1 class="choose_taital"><?php echo $contact['contact_us_title']; ?></h1>
-        <div class="choose_text">
-            <?php echo $contact['contact_us_description']; ?>
+        <div class="row justify-content-center">
+            <?php
+            $faq = get_field('faq_section');
+            ?>
+            <div class="col-12 col-sm-8 col-lg-6">
+                <!-- Section Heading-->
+                <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s"
+                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <h1 class="faq_taital"><?php echo $faq['faq_title']; ?></h1>
+                    <div class="mb-5"><?php echo $faq['faq_description']; ?></div>
+                    <div class="line"></div>
+                </div>
+            </div>
         </div>
-        <div class="read_bt_1"><a href="#"><?php echo $contact['contact_us_button']; ?></a></div>
-        <div class="newsletter_box">
-            <h1 class="let_text"><?php echo $contact['contact_us_tagline']; ?></h1>
-            <div class="getquote_bt"><a href="#ctc_chat"><?php echo $contact['contact_us_tagline_button']; ?></a></div>
+        <div class="row justify-content-center">
+            <!-- FAQ Area-->
+            <div class="col-12 col-sm-10 col-lg-8">
+                <div class="accordion faq-accordian" id="faqAccordion">
+                    <?php
+                    $entries = $faq['faq_entries'];
+                    foreach ($entries as $key => $entry):
+                    ?>
+                    <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="card-header" id="heading<?php echo $key; ?>">
+                            <h3 class="mb-0 collapsed" data-toggle="collapse"
+                                data-target="#collapse<?php echo $key; ?>" aria-expanded="true"
+                                aria-controls="collapse<?php echo $key; ?>">
+                                <?php echo $entry['faq_question']; ?><span class="lni-chevron-up"></span>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="collapse<?php echo $key; ?>"
+                            aria-labelledby="heading<?php echo $key; ?>" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                <?php echo $entry['faq_answer']; ?>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endforeach ?>
+                </div>
+                <!-- Support Button-->
+                <div class="support-button text-center d-flex align-items-center justify-content-center mt-4 wow fadeInUp"
+                    data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <i class="lni-emoji-sad"></i>
+                    <div class="ml-3">
+                        <h5 class="mb-5 mt-5">Can't find the answer you need? Feel free to contact us!</h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+    <!-- faq section end -->
 
-<?php get_footer(); ?>
+    <!-- choose section start -->
+    <div class="choose_section mt-5 layout_padding">
+        <?php $contact = get_field('contact_us'); ?>
+        <div class="container">
+            <h1 class="choose_taital"><?php echo $contact['contact_us_title']; ?></h1>
+            <div class="choose_text">
+                <?php echo $contact['contact_us_description']; ?>
+            </div>
+            <div class="read_bt_1"><a href="#"><?php echo $contact['contact_us_button']; ?></a></div>
+            <div class="newsletter_box">
+                <h2 class="let_text"><?php echo $contact['contact_us_tagline']; ?></h2>
+                <div class="getquote_bt"><a href="#ctc_chat"><?php echo $contact['contact_us_tagline_button']; ?></a></div>
+            </div>
+        </div>
+    </div>
+    <!-- choose section end -->
+    <?php get_footer(); ?>
