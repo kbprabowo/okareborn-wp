@@ -138,6 +138,7 @@ p {
 }
 
 a {
+  transition: all 0.2s ease-in-out;
   color: #222222;
   text-decoration: none;
   outline: none !important;
@@ -339,6 +340,18 @@ button {
 }
 
 /* header section end */
+
+/* Anchor link section start */
+
+body:has(:target[id="home"]) a[href="#home"],
+body:has(:target[id="services"]) a[href="#services"],
+body:has(:target[id="about"]) a[href="#about"],
+body:has(:target[id="video"]) a[href="#video"],
+body:has(:target[id="testimonial"]) a[href="#testimonial"],
+body:has(:target[id="faq"]) a[href="#faq"],
+body:has(:target[id="contact_us"]) a[href="#contact_us"]
+
+/* Anchor link section end */
 
 /* banner section start */
 

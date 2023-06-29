@@ -6,7 +6,7 @@ Template Name: Front page
 
 <?php get_header(); ?>
 
-<div class="banner_section layout_padding">
+<div class="banner_section layout_padding" id="home">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <?php
@@ -27,7 +27,7 @@ Template Name: Front page
 <!-- banner section end -->
 </div>
 <!-- services section start -->
-<div class="services_section layout_padding">
+<div class="services_section layout_padding" id="services">
     <?php
     $services = get_field('services_main');
     ?>
@@ -51,7 +51,7 @@ Template Name: Front page
 </div>
 <!-- services section end -->
 <!-- about section start -->
-<div class="about_section layout_padding">
+<div class="about_section layout_padding" id="about">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
@@ -73,8 +73,8 @@ Template Name: Front page
     </div>
 </div>
 <!-- about section end -->
-<!-- blog section start -->
-<div class="blog_section layout_padding">
+<!-- video section start -->
+<div class="blog_section layout_padding" id="video">
     <?php
     $video = get_field('video_section');
     ?>
@@ -90,9 +90,9 @@ Template Name: Front page
         </div>
     </div>
 </div>
-<!-- blog section end -->
+<!-- video section end -->
 <!-- client section start -->
-<div class="client_section layout_padding">
+<div class="client_section layout_padding" id="testimonial">
     <div class="container">
         <?php
         $testimonial = get_field('testimonial_section');
@@ -188,7 +188,8 @@ Template Name: Front page
                 </div>
                 <!-- Support Button-->
                 <div class="support-button text-center d-flex align-items-center justify-content-center mt-4 wow fadeInUp"
-                    data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    data-wow-delay="0.5s"
+                    style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
                     <i class="lni-emoji-sad"></i>
                     <div class="ml-3">
                         <h5 class="mb-5 mt-5">Can't find the answer you need? Feel free to contact us!</h5>
@@ -200,7 +201,7 @@ Template Name: Front page
     <!-- faq section end -->
 
     <!-- choose section start -->
-    <div class="choose_section mt-5 layout_padding">
+    <div class="choose_section mt-5 layout_padding" id="contact_us">
         <?php $contact = get_field('contact_us'); ?>
         <div class="container">
             <h1 class="choose_taital"><?php echo $contact['contact_us_title']; ?></h1>
