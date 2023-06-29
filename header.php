@@ -45,9 +45,6 @@
                                 <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#video">Video</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="#testimonial">Testimonial</a>
                             </li>
                             <li class="nav-item">
@@ -69,7 +66,6 @@
                         <li class="active"><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#video">Video</a></li>
                         <li><a href="#testimonial">Testimonial</a></li>
                         <li><a href="#faq">FAQ</a></li>
                         <li><a href="#contact_us">Contact Us</a></li>

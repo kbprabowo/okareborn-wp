@@ -306,7 +306,7 @@ button {
   float: left;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 18px;
+  font-size: 10px;
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -346,7 +346,6 @@ button {
 body:has(:target[id="home"]) a[href="#home"],
 body:has(:target[id="services"]) a[href="#services"],
 body:has(:target[id="about"]) a[href="#about"],
-body:has(:target[id="video"]) a[href="#video"],
 body:has(:target[id="testimonial"]) a[href="#testimonial"],
 body:has(:target[id="faq"]) a[href="#faq"],
 body:has(:target[id="contact_us"]) a[href="#contact_us"]
