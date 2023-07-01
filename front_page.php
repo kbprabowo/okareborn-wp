@@ -198,22 +198,24 @@ Template Name: Front page
             </div>
         </div>
     </div>
-    <!-- faq section end -->
+</div>
 
-    <!-- choose section start -->
-    <div class="choose_section mt-5 layout_padding" id="contact_us">
-        <?php $contact = get_field('contact_us'); ?>
-        <div class="container">
-            <h1 class="choose_taital"><?php echo $contact['contact_us_title']; ?></h1>
-            <div class="choose_text">
-                <?php echo $contact['contact_us_description']; ?>
-            </div>
-            <div class="read_bt_1"><a href="#"><?php echo $contact['contact_us_button']; ?></a></div>
-            <div class="newsletter_box">
-                <h2 class="let_text"><?php echo $contact['contact_us_tagline']; ?></h2>
-                <div class="getquote_bt"><a href="#ctc_chat"><?php echo $contact['contact_us_tagline_button']; ?></a></div>
-            </div>
+<!-- faq section end -->
+
+<!-- choose section start -->
+<div class="choose_section mt-5 layout_padding" id="contact_us">
+    <?php $contact = get_field('contact_us'); ?>
+    <div class="container">
+        <h1 class="choose_taital"><?php echo $contact['contact_us_title']; ?></h1>
+        <div class="choose_text">
+            <?php echo $contact['contact_us_description']; ?>
+        </div>
+        <div class="read_bt_1"><a href="#"><?php echo $contact['contact_us_button']; ?></a></div>
+        <div class="newsletter_box">
+            <h2 class="let_text"><?php echo $contact['contact_us_tagline']; ?></h2>
+            <div class="getquote_bt"><a href="#ctc_chat"><?php echo $contact['contact_us_tagline_button']; ?></a></div>
         </div>
     </div>
-    <!-- choose section end -->
-    <?php get_footer(); ?>
+</div>
+<!-- choose section end -->
+<?php get_footer(); ?>
