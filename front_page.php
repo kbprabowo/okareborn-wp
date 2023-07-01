@@ -6,7 +6,7 @@ Template Name: Front page
 
 <?php get_header(); ?>
 
-<div class="banner_section layout_padding" id="home">
+<div class="banner_section layout_padding">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <?php

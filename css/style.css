@@ -306,7 +306,7 @@ button {
   float: left;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 10px;
+  font-size: 18px;
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -334,23 +334,11 @@ button {
 
 .header_main {
   width: 100%;
-  background-image: url(../images/header-bg.png);
   background-size: 100%;
   padding: 10px 0px 0px 0px;
 }
 
 /* header section end */
-
-/* Anchor link section start */
-
-body:has(:target[id="home"]) a[href="#home"],
-body:has(:target[id="services"]) a[href="#services"],
-body:has(:target[id="about"]) a[href="#about"],
-body:has(:target[id="testimonial"]) a[href="#testimonial"],
-body:has(:target[id="faq"]) a[href="#faq"],
-body:has(:target[id="contact_us"]) a[href="#contact_us"]
-
-/* Anchor link section end */
 
 /* banner section start */
 
