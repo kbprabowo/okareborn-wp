@@ -359,12 +359,6 @@ button {
   font-family: "Righteous", Regular;
 }
 
-@media only screen and (max-width: 575px) {
-  .banner_taital {
-    font-size: 40px;
-  }
-}
-
 .banner_text {
   width: 63%;
   margin: 0 auto;
