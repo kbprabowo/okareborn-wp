@@ -79,12 +79,6 @@ h1 {
   font-size: 24px;
 }
 
-@media only screen and (max-width: 575px) {
-  h1 {
-    font-size: 14px;
-  }
-}
-
 h2 {
   font-size: 22px;
 }
@@ -363,6 +357,12 @@ button {
   text-align: center;
   text-transform: uppercase;
   font-family: "Righteous", Regular;
+}
+
+@media only screen and (max-width: 575px) {
+  .banner_taital {
+    font-size: 40px;
+  }
 }
 
 .banner_text {
