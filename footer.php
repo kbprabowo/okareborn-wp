@@ -15,13 +15,8 @@
                     <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/fb-icon.png" /></a>
                 </li>
                 <li>
-                    <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/twitter-icon.png" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin-icon.png" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram-icon.png" /></a>
+                    <a href="https://www.instagram.com/balireborn/"><img
+                            src="<?php bloginfo('template_directory'); ?>/images/instagram-icon.png" /></a>
                 </li>
             </ul>
         </div>
